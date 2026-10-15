@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>¿Qué cocino hoy? Buscador de recetas por ingredientes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<main>
+  <h1>¿Qué hay en tu nevera?</h1>
+  <p class="lead">Escribe los ingredientes que tienes y te mostramos qué recetas puedes preparar, y qué te falta para las demás.</p>
+
+  <div class="add">
+    <input type="text" id="inp" placeholder="Ej. pollo, tomate, arroz" aria-label="Ingrediente" autocomplete="off" enterkeyhint="done">
+    <button class="btn" id="addBtn">Agregar</button>
+  </div>
+
+  <p class="label">Tus ingredientes</p>
+  <div class="chips" id="mine" aria-live="polite"></div>
+
+  <p class="label">Toca para agregar rápido</p>D
+  <div class="chips" id="quick"></div>
+
+  <div class="bar">
+    <h2 id="count">Recetas</h2>
+    <label><input type="checkbox" id="onlyReady"> Solo las que puedo preparar ya</label>
+  </div>
+  <div id="results"></div>
+
+  <p class="foot">Damos por hecho que ya tienes sal, aceite, agua y pimienta.</p>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
